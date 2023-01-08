@@ -24,6 +24,9 @@
   color: white;
 }
 
+.color-nav {
+  background-color: rgba(97, 183, 26, 0.811);
+}
 .App-link {
   color: #61dafb;
 }
