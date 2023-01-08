@@ -9,6 +9,7 @@ import { Mainpage } from './views/Mainpage';
 import { Stock } from './views/Stock';
 import { Contribute } from './views/contribute';
 import { Edit } from './views/edit';
+import { Stat } from './views/Stats';
 import {
   BrowserRouter as Router,
   Routes,
@@ -21,7 +22,7 @@ class App extends React.Component {
     return (
       <Router>
         <div className="App">
-          <Navbar bg="primary" variant="dark">
+          <Navbar className="color-nav" variant="light">
             <Container>
               <Navbar.Brand href="/">
                 <img
@@ -39,6 +40,7 @@ class App extends React.Component {
                 <Nav.Link href="/">Info-Hub</Nav.Link>
                 <Nav.Link href="/Stock">Stock</Nav.Link>
                 <Nav.Link href="/contribute">Contribute</Nav.Link>
+                <Nav.Link href="/stats">Stats</Nav.Link>
               </Nav>
 
               <Navbar.Brand href="/">
@@ -52,6 +54,7 @@ class App extends React.Component {
             <Route path='/Stock' element={<Stock></Stock>}></Route>
             <Route path='/Contribute' element={<Contribute></Contribute>}></Route>
             <Route path='/edit/:id' element={<Edit></Edit>}></Route>
+            <Route path='/stats' element={<Stat></Stat>}></Route>
           </Routes>
 
 
